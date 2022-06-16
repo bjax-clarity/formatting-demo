@@ -1,4 +1,5 @@
 pre-commit:
+  image: artifactory.cloud.cms.gov/batcave-docker/pipeline-tools/precommit:latest
   variables:
     PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
   cache:
