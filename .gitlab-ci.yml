@@ -6,4 +6,5 @@ pre-commit:
     paths:
       - ${PRE_COMMIT_HOME}
   script:
+    - git --version
     - pre-commit run --all-files --show-diff-on-failure
