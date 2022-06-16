@@ -11,5 +11,10 @@ pre-commit:
       - ${PRE_COMMIT_HOME}
   script:
     - git --version
+    - git log
+    - git status
     - ls -lah
     - pre-commit run --all-files --show-diff-on-failure
+  artifacts:
+    paths:
+      - ${PRE_COMMIT_HOME}
