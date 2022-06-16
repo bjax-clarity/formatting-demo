@@ -7,4 +7,5 @@ pre-commit:
       - ${PRE_COMMIT_HOME}
   script:
     - git --version
+    - ls -lah
     - pre-commit run --all-files --show-diff-on-failure
