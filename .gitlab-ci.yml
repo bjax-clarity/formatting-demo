@@ -12,7 +12,7 @@ pre-commit:
   script:
     - git config --global --add safe.directory /builds/ado-repositories/nightwing/playgrounds/formatting-demo
     - ls -lah
-    - pre-commit run --all-files --show-diff-on-failure
+    - pre-commit run --all-files --show-diff-on-failure --colors=always
   artifacts:
     paths:
       - ${PRE_COMMIT_HOME}
